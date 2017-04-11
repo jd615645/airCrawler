@@ -36,6 +36,7 @@ request(url, (err, res, body) => {
     })
     // console.log(parseData)
     firebase.database().ref('/lassmaps').push(parseData)
+    firebase.database().goOffline()
     console.log('upload done')
   }
 })

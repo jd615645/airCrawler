@@ -34,6 +34,7 @@ request(url, (err, res, body) => {
     })
     console.log(parseData)
     firebase.database().ref('/indie').push(parseData)
+    firebase.database().goOffline()
     console.log('upload done')
   }
 })

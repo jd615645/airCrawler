@@ -33,6 +33,7 @@ request(url, (err, res, body) => {
       parseData.push(value)
     })
     firebase.database().ref('/airbox').push(parseData)
+    firebase.database().goOffline()
     console.log('upload done')
   }
 })
