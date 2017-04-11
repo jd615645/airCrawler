@@ -1,0 +1,1 @@
+使用前要先在 `config_example.js` 填入firebase設定，並將檔名改為 `config_example.js`
