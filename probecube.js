@@ -30,7 +30,7 @@ request(url, (err, res, body) => {
       }
       parseData.push(value)
     })
-    // console.log(parseData)
+    console.log(parseData)
     firebase.database().ref('/probecube').push(parseData)
     firebase.database().goOffline()
     console.log('upload done')
